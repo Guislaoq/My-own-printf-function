@@ -21,9 +21,9 @@ void my_string(char*, ...);
 /** 
  *  A função faz a impressão de números inteiros não negativos
  * 
- * @param int um número inteiro não negativo
+ * @param int um número inteiro 
  * @return impressão de números inteiros 
  **/
-int my_putnum(int);
+int my_putnum(const int);
 
 #endif

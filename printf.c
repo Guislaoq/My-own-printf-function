@@ -10,6 +10,12 @@ int my_putchar(int c){
 int my_putnum(int n){
     short int qty = 0;
     char *number = malloc(12 * sizeof(char));
+
+    if(n < 0){
+        my_putchar('-');
+        n = -n;
+    }
+
     while(1){
        *(number + qty) = n % 10 + '0';
        if(n < 10)

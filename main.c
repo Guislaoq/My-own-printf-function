@@ -10,9 +10,11 @@ int main(){
     my_putchar('\n');
 
     my_string("Uso da funcao 'my_putnum():'\n");
-    my_putnum(123);
+    my_putnum(0);
     my_putchar('\n');
-    my_putnum(1994);
+    my_putnum(1993 + 1);
+    my_putchar('\n');
+    my_putnum(-2391);
     my_putchar('\n');
     my_putnum(2147483647);
     return 0;
