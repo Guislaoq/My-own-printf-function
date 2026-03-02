@@ -17,5 +17,11 @@ int main(){
     my_putnum(-2391);
     my_putchar('\n');
     my_putnum(2147483647);
+    my_putchar('\n');
+    my_putchar('\n');
+
+    my_string("Uso da funcao 'my_string()' com o uso de inteiros:\n");
+    my_string("Eu tenho %d anos\n", 19);
+    my_string("Hoje eh dia %d do %d\n", 10, 2);
     return 0;
 }

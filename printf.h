@@ -24,6 +24,6 @@ void my_string(char*, ...);
  * @param int um número inteiro 
  * @return impressão de números inteiros 
  **/
-int my_putnum(const int);
+int my_putnum(int);
 
 #endif

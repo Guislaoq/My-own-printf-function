@@ -38,9 +38,20 @@ void my_string(char *string, ...){
     va_list list;
     va_start(list, string);
     while(*string != '\0'){
-        if(*string != '%')
+        if(*string != '%'){
             my_putchar(*string);
-
+        }else{
+            *string++;
+            switch (*string)
+            {
+            case 'd':
+                my_putnum(va_arg(list, int));
+                break;
+            
+            default:
+                break;
+            }
+        }
         
         *string++;
     }
